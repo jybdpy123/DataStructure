@@ -111,11 +111,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="binarylink_binarytree.h" />
     <ClInclude Include="sq_list.h" />
+    <ClInclude Include="sq_queue.h" />
     <ClInclude Include="sq_stack.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="sq_list.cpp" />
+    <ClCompile Include="sq_queue.cpp" />
     <ClCompile Include="sq_stack.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

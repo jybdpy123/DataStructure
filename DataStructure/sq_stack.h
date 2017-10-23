@@ -14,8 +14,9 @@ namespace jyb
 		explicit sq_stack(const size_t maxsize);
 		bool is_empty() const;
 		bool is_full() const;
-		bool push(const T& x);
+		bool push(const T x);//修订20171023：不该传地址 应生成x的拷贝 防止多重修改
 		bool pop(T& x);
 		bool get_top(T& x);
+		size_t length()const;
 	};
 }

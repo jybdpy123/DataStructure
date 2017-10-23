@@ -23,7 +23,7 @@ namespace jyb
 	}
 
 	template <class T>
-	bool sq_stack<T>::push(const T& x)
+	bool sq_stack<T>::push(const T x)
 	{
 		if (is_full())return false;
 		data[top++] = x;
@@ -44,5 +44,11 @@ namespace jyb
 		if (is_empty())return false;
 		x = data[top];
 		return true;
+	}
+
+	template <class T>
+	size_t sq_stack<T>::length() const
+	{
+		return this->top;
 	}
 }
